@@ -12,7 +12,7 @@ interface Person {
 
 function sortPersons(persons: Person[]): Person[] {
 
-  const validPersons = persons.filter(person => {
+  const validPer = persons.filter(person => {
 
     if (typeof person.age !== 'number' || person.age < 0 || person.age > 120) {
       return false;
@@ -26,7 +26,7 @@ function sortPersons(persons: Person[]): Person[] {
     return true;
   });
 
-  return validPersons.sort((a, b) => {
+  return validPer.sort((a, b) => {
 
     if (a.age !== b.age) {
       return a.age - b.age;
