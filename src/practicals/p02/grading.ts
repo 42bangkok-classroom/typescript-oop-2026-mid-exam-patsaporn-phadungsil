@@ -1,10 +1,10 @@
 // Write your code below
 const grade = +process.argv[2]
 const point = Number(grade)
-if(Number.isNaN(grade)){
-    console.log("Invalid Input");
-}else if (grade < 0 || grade > 100){
-    console.log("Invalid Input");
+if(Number.isNaN(point)){
+    console.log("Invalid input");
+}else if (point < 0 || point > 100){
+    console.log("Invalid input");
 }else {
   if(grade >= 80){
     console.log("Grade is A");
