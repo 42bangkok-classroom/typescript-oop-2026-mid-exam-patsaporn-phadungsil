@@ -1,20 +1,20 @@
 // Write your code below
-const i: number =+ process.argv[2];
+const i: number = +process.argv[2]; // Convert argument to number
 
-if(Number.isNaN(i)){
+// Check for invalid or non-positive input
+if (Number.isNaN(i) || i <= 0) {
     console.log("Invalid input");
-}else if (i <= 0){
-    console.log("Invalid input");
-for(let i = 1;i <= i ;i++){
-    if(i % 15 == 0 ){
-        console.log("FizzBuzz");
-    }else if(i % 3 == 0){
-        console.log("Fizz");
-    }else if(i % 5 == 0){
-        console.log("Buzz");
-    }else{
-        console.log(i);
+} else {
+    // Loop from 1 to i (inclusive)
+    for (let j = 1; j <= i; j++) {
+        if (j % 15 === 0) {
+            console.log("FizzBuzz");
+        } else if (j % 3 === 0) {
+            console.log("Fizz");
+        } else if (j % 5 === 0) {
+            console.log("Buzz");
+        } else {
+            console.log(j);
+        }
     }
-}
-    
 }

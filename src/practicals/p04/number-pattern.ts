@@ -20,4 +20,4 @@ for(let i = 1 ; i <= py; i++){
    
   }
 
-}
+}printPattern(5);  
