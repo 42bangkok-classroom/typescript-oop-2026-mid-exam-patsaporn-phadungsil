@@ -1,5 +1,5 @@
 // Write your code below
-const i: number = +process.argv[2]; // Convert argument to number
+const i = +process.argv[2]; // Convert argument to number
 
 // Check for invalid or non-positive input
 if (Number.isNaN(i) || i <= 0) {
