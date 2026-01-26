@@ -7,7 +7,7 @@ if (Number.isNaN(i) || i <= 0) {
 } else {
     // Loop from 1 to i (inclusive)
     for (let j = 1; j <= i; j++) {
-        if (j % 15 === 0) {
+        if (j % 3 === 0 && j % 5 === 0) {
             console.log("FizzBuzz");
         } else if (j % 3 === 0) {
             console.log("Fizz");
