@@ -3,21 +3,20 @@
 const py = +process.argv[2];
 
 if(Number.isNaN(py) || py <= 0){
-  process.exit()
+  
 }
-function printPattern(rows: number): void {
+else{
 for(let i = 1 ; i <= py; i++){
     let result = "";
-    for(let j = 1;j <= i - 1; j++){
+    for(let j = py;j > 0; j--){
+      if(j > i){
       result +="";
+      }else{
+        result +=j;
+      }
 
-    }
-    for (let j = i; j >= 1; j--){
-    
-    result+= j;
     }
     console.log(result);
-   
   }
 
-}printPattern(5);  
+}
